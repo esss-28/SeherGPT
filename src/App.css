@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(3, 0, 31);
+  color: white;
+  font-family: 'Merriweather', sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  flex: 3;
+  border-right: 1px solid rgb(100, 100, 100);
+}
+
+.main {
+  flex: 9;
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.upperside {
+  padding: 2.5rem;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 70%;
+}
+
+.uppersideTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.addButton {
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+.midButton {
+  background-color: #3e3c56;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 3.7rem;
+  border-radius: 0.5rem;
+}
+
+.midButton:hover {
+  background-color: #222037;
+  border: none;
+}
+
+.query {
+  background-color: #222037;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98, 98, 98, 1);
+}
+
+.query:hover {
+  background-color: #2e2b48;
+  border: none;
+}
+
+.query>img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+}
+
+.lowerside {
+  padding: 2rem;
+}
+
+.listItems {
+  margin: 0.75rem;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.listItemsImg {
+  margin: 1rem;
+  padding-right: 1rem;
+  height: 2.55rem;
+}
+
+.listItems:nth-child(1)>.listItemsImg {
+  margin-left: 0.7rem;
+}
+
+.listItems:nth-child(3)>.listItemsImg {
+  margin-right: 0.75rem;
+}
+
+.main {
+  min-height: calc(100vh - 14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0rem;
+  margin: 6rem 10rem;
+}
+
+.main>p {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.chats {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+}
+
+.chats::-webkit-scrollbar {
+  width: 0; 
+  background: transparent;
+}
+
+.chatFooter {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.chatFooter>p {
+  margin: 2rem 0;
+}
+
+.chat {
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.chatImg {
+  object-fit: cover;
+  width: 4.375rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+.chat-bot{
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  background-color: rgba(28, 30, 58, 1);
+  width: fit-content;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.inp {
+  padding: 1rem;
+  background: rgba(20, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 68rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inp > input {
+  flex: 1; 
+  outline: none;
+  padding: 1.25rem;
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+.inp > .userIcon {
+  width: 4.375rem;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+}
+
+.send {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.send > img {
+  width: 2rem;
+  height: auto;
+}
+
+.inp>input, .send {
+  background: transparent;
+  border: none;
+}
+
+.user {
+  background: rgba(20, 30, 58, 1);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.assistant {
+  background-color: rgba(28, 30, 58, 1);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
+/*
+<div className="main">
+        <div className="chats">
+          <div className="chat">
+            <img className="chatImg" src={userIcon} alt="User" />
+            <p className="txt">Tempore ipsam similique ut doloribus error deserunt repudiandae ullam veniam beatae? Eos voluptate modi autem.</p>
+          </div>
+          <div className="chat-bot">
+            <img className="chatImg" src={gptImpLogo} alt="GPT" />
+            <p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia incidunt, illum necessitatibus sunt libero ipsa voluptatem itaque dignissimos nesciunt consequuntur sed velit deserunt esse assumenda in ducimus facilis temporibus eaque. Eos dolorum, commodi quibusdam adipisci aut nesciunt in architecto suscipit consequatur totam. Placeat facere doloremque nam, beatae ea aspernatur nulla?</p>
+          </div>
+        </div>
+        <div className="chatFooter">
+          <div className="inp">
+            <input type="text" placeholder="Send Message..." value={input} onChange={(e) => {setInput(e.target.value)}} />
+            <button className="send" onClick={handleSend}><img src={sendBtn} alt="Send" /></button>
+          </div>
+          <p>SeherGPT may produce inaccurate results related to people, places, or facts. SeherGPT v9.12.3.</p>
+        </div>
+      </div>
+    </div>
+    */
